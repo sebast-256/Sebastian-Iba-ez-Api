@@ -1,0 +1,272 @@
+/* Paleta de colores Marvel: Negro Cósmico, Blanco y Rojo Intenso (#ed1d24) */
+
+body {
+    background-color: #0b0b0e; /* Fondo ultra oscuro estilo cine */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Tipografía Especial */
+.fw-black {
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+/* Navbar Estilizada */
+.style-nav {
+    background-color: rgba(11, 11, 14, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #ed1d24;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Contenedor principal de la imagen de fondo */
+.marvel-hero {
+    position: relative;
+    height: 75vh;
+    min-height: 500px;
+    background-image: url('https://wallpaperaccess.com/full/94706.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Capa del degradé negro premium */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg, 
+        rgba(11, 11, 14, 0.3) 0%, 
+        rgba(11, 11, 14, 0.7) 60%, 
+        #0b0b0e 100%
+    );
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #cccccc !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Panel de Búsqueda */
+.main-content {
+    background-color: #16161a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid #26262b;
+}
+
+.search-box label {
+    color: #ed1d24;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+/* Input Futurista */
+.form-control {
+    background-color: #222227;
+    border: 1px solid #33333a;
+    color: white;
+    padding: 12px;
+}
+
+.form-control:focus {
+    background-color: #2a2a31;
+    color: white;
+    border-color: #ed1d24;
+    box-shadow: 0 0 0 0.25rem rgba(237, 29, 36, 0.25);
+}
+
+/* Botones con efecto de escala */
+.btn-danger {
+    background-color: #ed1d24;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-danger:hover {
+    background-color: #b3181d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(237, 29, 36, 0.4);
+}
+
+/* Estética de las Tarjetas de Personajes */
+.marvel-card {
+    background-color: #16161a !important;
+    border: 1px solid #26262b !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación Hover en las tarjetas */
+.marvel-card:hover {
+    transform: translateY(-8px);
+    border-color: #ed1d24 !important;
+    box-shadow: 0 12px 30px rgba(237, 29, 36, 0.25);
+}
+
+/* --- CONTROL DE IMÁGENES EN LAS TARJETAS DE LA LISTA --- */
+.card-img-top {
+    width: 100% !important;
+    height: 320px !important;    
+    object-fit: cover !important; 
+    object-position: top !important; 
+}
+
+/* --- CONTROL DE IMÁGENES DENTRO DEL MODAL (FICHA TÉCNICA) --- */
+#modalImagen {
+    width: 100% !important;
+    height: 350px !important;     
+    object-fit: cover !important; 
+    object-position: top !important;
+    border-radius: 8px;
+}
+.marvel-card:hover .card-img-top {
+    border-color: #ed1d24;
+}
+
+/* Mensaje vacío */
+.text-muted-custom {
+    color: #ffffff;
+}
+
+/* Indicador de interactividad en tarjetas */
+.pointer-cursor {
+    cursor: pointer;
+}
+
+
+/* ================= ESTILOS PROPIOS DEL MINIJUEGO ADIVINA QUIÉN ================= */
+
+.bg-game-zone {
+    background-color: #ffffff;
+}
+
+/* Caja de la tarjeta secreta */
+.game-secret-card-box {
+    width: 190px;
+    height: 260px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Estado Vacío de la tarjeta secreta */
+.game-secret-card-box.empty-state {
+    border: 3px dashed #33333a;
+    background-color: #16161a;
+}
+.game-secret-card-box.empty-state:hover {
+    border-color: #ed1d24;
+    background-color: #1c1c22;
+}
+
+/* Estado Oculto (Reverso de la carta) */
+.game-secret-card-box.hidden-state {
+    border: 3px solid #ed1d24;
+    background: repeating-linear-gradient(
+      45deg,
+      #16161a,
+      #16161a 10px,
+      #222229 10px,
+      #222229 20px
+    );
+}
+
+/* Tarjetas del tablero de descarte */
+.game-card {
+    background-color: #16161a !important;
+    border: 1px solid #33333a !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.game-card-img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    object-position: top;
+    transition: all 0.2s ease;
+}
+
+/* Texto de "ELIMINADO" absoluto oculto por defecto */
+.game-card-overlay-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 29, 36, 0.4);
+    color: #fff;
+    font-weight: 900;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+}
+
+/* Clase desencadenada por JavaScript al clickear (Personaje Apagado) */
+.character-eliminated {
+    border-color: rgba(237, 29, 36, 0.5) !important;
+    opacity: 0.25;
+}
+
+.character-eliminated .game-card-img {
+    filter: grayscale(100%) blur(1px);
+}
+
+.character-eliminated .game-card-overlay-abs {
+    opacity: 1;
+}
+
+/* --- CORRECCIÓN DE VISIBILIDAD EN LA TARJETA OCULTA --- */
+.game-secret-card-box.hidden-state .text-muted {
+    color: #b0b3b8 !important; /* Cambia el gris oscuro por un gris claro muy legible */
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); /* Sombra negra para separarlo del fondo rayado */
+}
+
+.game-secret-card-box.hidden-state h4 {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* Sobrescribe el color gris de Bootstrap dentro de tus tarjetas Marvel */
+.marvel-card .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important; /* Blanco semitransparente legible */
+}
+
+/* O si prefieres un blanco completamente puro y brillante: */
+.marvel-card .card-subtitle {
+    color: #ffffff !important;
+}

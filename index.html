@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marvel API Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  </head>
+
+  <body onload="solicitudAJAX()">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top style-nav">
+      <div class="container">
+        <a class="navbar-brand fw-black" href="#">MARVEL <span class="badge bg-danger">DATABASE</span></a>
+        <div class="ms-auto d-flex gap-2">
+
+          <a href="#database-section" class="btn btn-outline-danger btn-sm text-uppercase fw-bold">Explorar</a>
+          <a href="#game-section" class="btn btn-danger btn-sm text-uppercase fw-bold">Adivina Quién 🎮</a>
+          
+        </div>
+      </div>
+    </nav>
+
+    <header class="marvel-hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-center">
+        <h2 class="text-uppercase tracking-wide text-danger fw-bold">Archivo Clasificado</h2>
+        <h1 class="display-2 fw-black text-white">UNIVERSO MARVEL</h1>
+        <p class="lead text-light max-w-md mx-auto">
+          Explora los registros oficiales de los héroes más poderosos de la Tierra y las amenazas más peligrosas del cosmos.
+        </p>
+        <a href="#database-section" class="btn btn-danger btn-lg text-uppercase fw-bold mt-3 px-5 py-3 shadow-lg">
+          Ingresar a la Base de Datos
+        </a>
+      </div>
+    </header>
+
+    <main id="database-section" class="container py-5">
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-8 main-content">
+          <div class="search-box">
+            <label for="nPokemon" class="form-label fw-bold text-uppercase tracking-wider">Buscar por Nombre o ID</label>
+            <div class="input-group mb-3">
+              <input type="text" id="nPokemon" class="form-control" placeholder="Ej: Spider, Doom, 12..." autocomplete="off" oninput="buscar()" />
+              <button class="btn btn-secondary fs-5 px-3" onclick="heroeAleatorio()" title="Registro Aleatorio">🎲</button>
+            </div>
+            
+            <div class="d-flex justify-content-center flex-wrap gap-2 mt-3" id="filtrosContainer">
+              <button class="btn btn-danger filter-btn fw-bold" onclick="filtrarBando('Todos', this)">TODOS</button>
+              <button class="btn btn-outline-danger filter-btn fw-bold" onclick="filtrarBando('Héroe', this)">HÉROES</button>
+              <button class="btn btn-outline-danger filter-btn fw-bold" onclick="filtrarBando('Villano', this)">VILLANOS</button>
+              <button class="btn btn-outline-danger filter-btn fw-bold" onclick="filtrarBando('Anti-héroe', this)">ANTI-HÉROES</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="wallet_container"></div>
+      <div id="ConteinerCard" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center"></div>
+    </main>
+
+    <section id="game-section" class="bg-game-zone py-5 border-top border-danger">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-black text-danger text-uppercase">MINIJUEGO: ADIVINA QUIÉN</h2>
+          <p class="text-muted fs-5">Abre este juego en dos computadoras. ¡Haz preguntas a tu rival y descarta personajes haciendo clic!</p>
+        </div>
+
+        <div class="row justify-content-center align-items-center g-4 mb-5">
+          <div class="col-md-4 text-center text-md-end">
+            <button class="btn btn-danger btn-lg fw-bold text-uppercase px-4 py-3 mb-2" onclick="generarPersonajeSecreto()">
+              🎲 Obtener Personaje Secreto
+            </button>
+            <br>
+            <button class="btn btn-outline-secondary btn-sm fw-bold text-uppercase mt-2" onclick="reiniciarTableroJuego()">
+              🔄 Reiniciar Tablero
+            </button>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <div id="tarjetaSecretaContainer" class="game-secret-card-box empty-state" onclick="revelarOcultarSecreto()">
+              <div id="contenidoSecreto" class="text-center text-muted">
+                <span class="fs-1 d-block mb-2">❓</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 text-center text-md-start text-muted fs-6">
+            <p class="mb-1"><strong>¿Cómo jugar?</strong></p>
+            <p class="small mb-0">1. Genera tu personaje oculto.<br>2. Haz click sobre él para ocultarlo de tu rival.<br>3. Haz preguntas de "Sí o no" por turnos.<br>4. Haz clic en el tablero de abajo para "apagar" a los que descartes.</p>
+          </div>
+        </div>
+
+        <h4 class="text-uppercase fw-bold text-danger mb-4 tracking-wider text-center text-md-start">Tu Tablero de Descarte:</h4>
+        <div id="tableroJuego" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center"></div>
+      </div>
+    </section>
+    <div class="modal fade" id="modalHeroe" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-danger shadow-lg">
+          <div class="modal-header border-secondary">
+            <h4 class="modal-title fw-black text-danger text-uppercase" id="modalTitulo">Nombre Héroe</h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center p-4">
+            <img id="modalImagen" src="" alt="Heroe" class="img-fluid rounded mb-3 border border-secondary" style="max-height: 400px; width: 100%; object-fit: cover; object-position: top;">
+            <div class="d-flex justify-content-center gap-2 mb-3">
+              <span class="badge bg-danger fs-6" id="modalBando"></span>
+              <span class="badge bg-secondary fs-6">Aparición: <span id="modalAnio"></span></span>
+            </div>
+            <p id="modalDesc" class="text-light fs-5"></p>
+            <div class="badge bg-dark border border-secondary w-100 py-2 mt-2 fs-6">ID REGISTRO: <span id="modalId"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

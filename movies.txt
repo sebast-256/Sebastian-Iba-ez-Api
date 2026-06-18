@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "titulo": "Spider-Man",
+        "anio": "1962",
+        "bando": "Héroe",
+        "imagen_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Web_of_Spider-Man_Vol_1_129-1.png/250px-Web_of_Spider-Man_Vol_1_129-1.png",
+        "descripcion": "Peter Parker obtuvo habilidades arácnidas tras ser mordido por una araña radiactiva. Usa su gran poder con gran responsabilidad."
+    },
+    {
+        "id": 2,
+        "titulo": "Iron Man",
+        "anio": "1963",
+        "bando": "Héroe",
+        "imagen_url": "https://imgcdn.stablediffusionweb.com/2024/10/24/d6a47fb5-4d32-4d64-b20a-dc532b2826e4.jpg",
+        "descripcion": "El multimillonario genio Tony Stark construyó una armadura de alta tecnología para escapar del cautiverio y proteger al mundo."
+    },
+    {
+        "id": 3,
+        "titulo": "Thor",
+        "anio": "1962",
+        "bando": "Héroe",
+        "imagen_url": "https://i.redd.it/h1f8rv6pjnna1.jpg",
+        "descripcion": "El Dios del Trueno asgardiano, príncipe de Asgard y protector de la Tierra, armado con su místico e indestructible martillo Mjolnir."
+    },
+    {
+        "id": 4,
+        "titulo": "Captain America",
+        "anio": "1941",
+        "bando": "Héroe",
+        "imagen_url": "https://i.blogs.es/56507e/capi-2025/1200_900.jpeg",
+        "descripcion": "Steve Rogers fue transformado por el suero del Súper Soldado en el símbolo viviente de la libertad, luchando desde la Segunda Guerra Mundial."
+    },
+    {
+        "id": 5,
+        "titulo": "Hulk",
+        "anio": "1962",
+        "bando": "Héroe",
+        "imagen_url": "https://wompimages.ampify.care/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F050%2F448%2Fhulkcrycover.jpg",
+        "descripcion": "El científico Bruce Banner quedó expuesto a niveles masivos de radiación gamma, lo que hace que se convierta en un gigante verde lleno de furia."
+    },
+    {
+        "id": 6,
+        "titulo": "Black Widow",
+        "anio": "1964",
+        "bando": "Héroe",
+        "imagen_url": "https://imgcdn.stablediffusionweb.com/2024/10/3/f9d742ed-c83a-46db-9bf4-683e36225e72.jpg",
+        "descripcion": "Natasha Romanoff es una de las espías e interrogadoras más letales del mundo, entrenada en la Habitación Roja y pilar fundamental de SHIELD."
+    },
+    {
+    "id": 7,
+        "titulo": "Moon Knight",
+        "anio": "1975",
+        "bando": "Anti-héroe",
+        "imagen_url": "https://i0.wp.com/photos1.blogger.com/blogger/656/2170/1600/MOONKN002.jpg",
+        "descripcion": "Marc Spector es un mercenario con trastorno de identidad disociativo que se convierte en el avatar del dios egipcio de la luna, Khonshu."
+    },
+    {
+        "id": 8,
+        "titulo": "Daredevil",
+        "anio": "1964",
+        "bando": "Héroe",
+        "imagen_url": "https://m.media-amazon.com/images/I/91mYLeQYoNL._AC_UF894,1000_QL80_.jpg",
+        "descripcion": "Matt Murdock quedó ciego por una sustancia radiactiva que mejoró sus otros sentidos a niveles sobrehumanos. Es abogado de día y vigilante de noche."
+    },
+    {
+        "id": 9,
+        "titulo": "She-Hulk",
+        "anio": "1980",
+        "bando": "Héroe",
+        "imagen_url": "https://tajmahalcomics.com/wp-content/uploads/2024/03/2292092_xl.jpg",
+        "descripcion": "Jennifer Walters es una abogada que adquirió poderes similares a los de Hulk tras recibir una transfusión de sangre de su primo Bruce Banner."
+    },
+    {
+        "id": 10,
+        "titulo": "Venom",
+        "anio": "1988",
+        "bando": "Anti-héroe",
+        "imagen_url": "https://cdn.mos.cms.futurecdn.net/iE9NxG8LFx9T7jYDWsKzLS.jpg",
+        "descripcion": "Un peligroso simbionte alienígena que se fusiona con el periodista Eddie Brock, compartiendo un odio mutuo y obsesivo hacia Spider-Man."
+    },
+    {
+        "id": 11,
+        "titulo": "Doctor Doom",
+        "anio": "1962",
+        "bando": "Villano",
+        "imagen_url": "https://carlosnietoart.com/wp-content/uploads/2024/11/DRDOOM_PRINT_CARLOSNIETO.jpg.webp",
+        "descripcion": "Victor von Doom es el brillante y despiadado monarca de Latveria, un maestro tanto de la ciencia avanzada como de las artes místicas."
+    },
+    {
+        "id": 12,
+        "titulo": "Wolverine",
+        "anio": "1974",
+        "bando": "Anti-héroe",
+        "imagen_url": "https://cdn.mos.cms.futurecdn.net/vxcLorRdyZPjbmoZ7Sf6VQ.jpg",
+        "descripcion": "Un mutante con un factor de curación acelerado, sentidos animales y un esqueleto recubierto de adamantium indestructible con garras retráctiles."
+    },
+    {
+        "id": 13,
+        "titulo": "Deadpool",
+        "anio": "1991",
+        "bando": "Anti-héroe",
+        "imagen_url": "https://preview.redd.it/any-good-deadpool-comics-i-can-look-for-v0-efjf2zojz1qb1.jpg?width=640&crop=smart&auto=webp&s=863ae1839c6d73148b32cac10a96af7f3e369352",
+        "descripcion": "Wade Wilson es un mercenario bocazas e inestable con un factor de curación regenerativo extremo que sabe perfectamente que está dentro de un cómic."
+    },
+    {
+        "id": 14,
+        "titulo": "Doctor Strange",
+        "anio": "1963",
+        "bando": "Héroe",
+        "imagen_url": "https://planoamericano.com/wp-content/uploads/2025/02/Doctor-Stange-7.webp",
+        "descripcion": "Stephen Strange era un arrogante cirujano que, tras un accidente, buscó curación y terminó convirtiéndose en el Hechicero Supremo de la Tierra."
+    },
+    {
+        "id": 15,
+        "titulo": "Scarlet Witch",
+        "anio": "1964",
+        "bando": "Héroe",
+        "imagen_url": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/03/Scarlet-Witch-comics.jpg?resize=1280%2C1600&ssl=1",
+        "descripcion": "Wanda Maximoff posee la capacidad de alterar la realidad y manipular la poderosa Magia del Caos, siendo una de las entidades más peligrosas."
+    },
+    {
+        "id": 16,
+        "titulo": "Black Panther",
+        "anio": "1966",
+        "bando": "Héroe",
+        "imagen_url": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/blackpanthermarvel.png",
+        "descripcion": "T'Challa es el rey de Wakanda, una nación africana tecnológicamente avanzada. Protege a su pueblo usando un traje de vibranium."
+    },
+    {
+        "id": 17,
+        "titulo": "Hawkeye",
+        "anio": "1964",
+        "bando": "Héroe",
+        "imagen_url": "https://static.wikia.nocookie.net/marveldatabase/images/6/6f/Thunderbolts_Vol_5_1_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20220622131243",
+        "descripcion": "Clint Barton es el arquero más letal del mundo. Su puntería perfecta y arsenal de flechas especiales lo convierten en un Vengador clave."
+    },
+    {
+        "id": 18,
+        "titulo": "Green Goblin",
+        "anio": "1964",
+        "bando": "Villano",
+        "imagen_url": "https://cdn.mos.cms.futurecdn.net/5TNu8reM7bP5DFN88cnTQJ.jpg",
+        "descripcion": "Norman Osborn es un industrial multimillonario que se volvió loco debido a la Fórmula Globulina, convirtiéndose en el peor enemigo de Spider-Man."
+    },
+    {
+        "id": 19,
+        "titulo": "Thanos",
+        "anio": "1973",
+        "bando": "Villano",
+        "imagen_url": "https://static.wikia.nocookie.net/doblaje/images/3/3a/ThanosComic.jpg/revision/latest/scale-to-width-down/1200?cb=20241005235136&path-prefix=es",
+        "descripcion": "El Titán Loco, un conquistador cósmico obsesionado con recolectar las seis Gemas del Infinito para equilibrar el universo a su manera."
+    },
+    {
+        "id": 20,
+        "titulo": "Magneto",
+        "anio": "1963",
+        "bando": "Villano",
+        "imagen_url": "https://upload.wikimedia.org/wikipedia/en/e/e9/Magneto_%28Marvel_Comics_character%29.jpg",
+        "descripcion": "Max Eisenhardt es un poderoso mutante capaz de controlar los campos magnéticos. Lucha por la supremacía mutante frente a la humanidad."
+    },
+    {
+        "id": 21,
+        "titulo": "Loki",
+        "anio": "1962",
+        "bando": "Villano",
+        "imagen_url": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/Loki_Laufeyson_%28Earth-616%29_from_Thor_Vol_3_12_0001.jpg/revision/latest/scale-to-width-down/1200?cb=20201011071529",
+        "descripcion": "El Dios del Engaño asgardiano y hermano adoptivo de Thor, maestro de las ilusiones, la magia y los planes impredecibles."
+    },
+    {
+        "id": 22,
+        "titulo": "Professor X",
+        "anio": "1963",
+        "bando": "Héroe",
+        "imagen_url": "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Old_Man_Logan_Vol_2_26_X-Men_Trading_Card_Variant_Textless.jpg/revision/latest?cb=20170611175302",
+        "descripcion": "Charles Xavier es el telépata más poderoso del mundo y fundador de los X-Men, buscando la coexistencia pacífica entre humanos y mutantes."
+    },
+    {
+        "id": 23,
+        "titulo": "Cyclops",
+        "anio": "1963",
+        "bando": "Héroe",
+        "imagen_url": "https://preview.redd.it/recommendations-cyclops-comics-v0-6o13u0q8sfne1.jpeg?auto=webp&s=c7a613acbd522a6de810d02a03a60025478dd4c8",
+        "descripcion": "Scott Summers es el líder de campo de los X-Men. Emite potentes rayos de fuerza óptica desde sus ojos que solo controla con un visor de cuarzo rubí."
+    },
+    {
+        "id": 24,
+        "titulo": "Jean Grey",
+        "anio": "1963",
+        "bando": "Héroe",
+        "imagen_url": "https://m.media-amazon.com/images/I/81OF3Rir5JL._AC_UF894,1000_QL80_.jpg",
+        "descripcion": "Una mutante de nivel Omega con inmensos poderes de telepatía y telequinesis, vinculada frecuentemente a la entidad cósmica conocida como Fénix."
+    },
+    {
+        "id": 25,
+        "titulo": "Star-Lord",
+        "anio": "1976",
+        "bando": "Héroe",
+        "imagen_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigiPb_wmDyMPxA1ZniuEnhve8ZoYo25uW6D4Tc8mqzaFYkpPIwgfkb4DccMbRnsDTDaFLnyK8lNvxBMIYWX0RyqM7a-uzt4V0pvC66yPNYEPK93OKHw9jSXEtGp1A8W2DtuCPYws7s7ko/s1600/Star-Lord+%25238+%25282016%2529+-+Page+3.jpg",
+        "descripcion": "Peter Quill es un aventurero interestelar mitad humano y líder de los Guardianes de la Galaxia, conocido por su amor a la música terrícola."
+    },
+    {
+        "id": 26,
+        "titulo": "Groot",
+        "anio": "1960",
+        "bando": "Héroe",
+        "imagen_url": "https://static.wikia.nocookie.net/wiki-doblaje-espana/images/3/34/GrootMarvelGuardiansOfTheGalaxy01.jpg/revision/latest?cb=20250403200314&path-prefix=es",
+        "descripcion": "Un organismo vegetal antropomórfico con la capacidad de regenerarse y expandir su cuerpo. Se comunica exclusivamente con la frase 'Yo soy Groot'."
+    },
+    {
+        "id": 27,
+        "titulo": "Rocket Raccoon",
+        "anio": "1976",
+        "bando": "Héroe",
+        "imagen_url": "https://static.wikia.nocookie.net/marveldatabase/images/f/f3/Rocket_Raccoon_%28Earth-616%29_from_Guardians_of_the_Galaxy_Vol_7_14_cover_001.jpg/revision/latest?cb=20210729022735",
+        "descripcion": "Un mapache alterado genéticamente y mejorado cibernéticamente, experto en armas pesadas, tácticas militares y reparaciones mecánicas complejas."
+    },
+    {
+        "id": 28,
+        "titulo": "Punisher",
+        "anio": "1974",
+        "bando": "Anti-héroe",
+        "imagen_url": "https://www.zonanegativa.com/imagenes/2026/03/Punisher1_ImagenDestacada.jpg",
+        "descripcion": "Frank Castle es un ex-marine que inició una guerra implacable y letal de un solo hombre contra el crimen organizado tras el asesinato de su familia."
+    },
+    {
+        "id": 29,
+        "titulo": "Kingpin",
+        "anio": "1967",
+        "bando": "Villano",
+        "imagen_url": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Secret_Empire_Vol_1_9_Villain_Variant_Textless.jpg/revision/latest?cb=20170523161632",
+        "descripcion": "Wilson Fisk es el cerebro criminal supremo y señor del crimen de Nueva York, poseedor de una fuerza física descomunal bajo su apariencia corpulenta."
+    },
+    {
+        "id": 30,
+        "titulo": "Mysterio",
+        "anio": "1964",
+        "bando": "Villano",
+        "imagen_url": "https://cdn.marvel.com/content/2x/1_88a91.png",
+        "descripcion": "Quentin Beck es un ex-especialista en efectos especiales e ilusiones ópticas que usa la tecnología para simular superpoderes y cometer crímenes."
+    }
+]
